@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>
+    Order Confirmed
+  </title>
+  <link rel="stylesheet" href="/style4.css" type="text/css" />
+  <link rel="icon" href="/images/title-icon.png">
+</head>
+<body>
+    <main>			
+				<h3>Order Placed Sucessfully &#128512; &#128525;</h3>
+    <p>You Have Sucessfully Placed Your Order. We Gaurentee Pizza Delivery Within<b> 10 Mins</b>. &#128526;</p>
+    <p>You can also Register for <b>MORE OFFERS</b> and <b> UPDATES </b>that We Keep On <b>SPECAIL DAYS</b> and Offer <b>HUGE DISCOUNT</b> to Registered Users on their <i>Birthday </i>&#129321;&#129321;</p>
+
+
+      <?php
+$basee=$_GET["base"];
+if($basee=="thin"){
+  $basee=22*0.18+22;
+}else if($basee=="NH");{
+  $basee=20;
+}
+
+echo("You have slected".$basee);
+
+
+
+
+
+
+
+$delvi=$_GET["yes_or_no"];
+if($delvi=="Delivery"){
+  $delvi=7;
+}else if($delvi=="Takeout"){
+  $delvi=0;
+}
+
+echo("If you have selcted Delivery option please pay ".$delvi);
+
+?>
+
+
+      <div class="button">
+            <a href="/register.html">
+              <input type="button" value="Register Now">
+            </a>
+      </div>
+      
+        <footer>
+            <p><small>©Copyright Owner Harsh Dorlekar</small></p>
+        </footer>
+	</body>
+</html>

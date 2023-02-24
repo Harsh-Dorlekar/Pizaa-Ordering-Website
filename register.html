@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>
+    Register
+  </title>
+  <link rel="stylesheet" href="/style4.css" type="text/css" />
+  <link rel="icon" href="/images/title-icon.png">
+</head>
+
+<body>
+  <main>
+    <h2>Enter your Contact Details </h2>
+    <form id="contact_info" action="/registercomplete.html" method="post" />
+    <input type="hidden" name="form_sent" value="1" />
+    <fieldset>
+      <legend>Contact Information</legend>
+      <div>
+        <label for="fName">First Name:</label>
+        <input type="text" id="fName" name="first" size="30" maxlength="50" placeholder="Type your first name"
+          required />
+      </div>
+      <div>
+        <label for="lName">Last Name:</label>
+        <input type="text" id="lName" name="last" size="30" maxlength="50" placeholder="Type your Last Name" required />
+      </div>
+      <div>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+      </div>
+      <div>
+        <label for="province"> Select your province: </label>
+        <select id="province" name="province">
+          <option value="ON" selected>Ontario</option>
+          <option value="AB">Alberta</option>
+          <option value="BC">British Columbai</option>
+          <option value="SK">Sasketchawan</option>
+        </select>
+      </div>
+      <div>
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone" name="telephone" maxlength="14" />
+      </div>
+      <div>
+
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Enter your password</legend>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <div>
+        <label for="password">Confirm Password:</label>
+        <input type="password" id="cpassword" name="cpassword" required />
+      </div>
+
+    </fieldset>
+    <fieldset>
+      <legend>
+        </leg>How to contact You</legend>
+      <input type="radio" name="hcy" id="sms" value="sms" />
+      <label for="sms">Text message (SMS)</label>
+      <input type="radio" name="hcy" id="phone" value="phone" />
+      <label for="call">Phone Call</label>
+      <input type="radio" name="hcy" id="mobile app" value="mobile app" />
+      <label for="mobile app">Mobile App</label>
+    </fieldset>
+    <fieldset>
+      <legend>Alert Settings</legend>
+      <input type="checkbox" name="alert[]" id="alert1" value="push" />
+      <label for="alert1">Push notification (mobile app)</label>
+      <input type="checkbox" name="alert[]" id="alert2" value="email" />
+      <label for="alert2">Email alert</label>
+      <input type="checkbox" name="alert[]" id="alert3" value="SMS alert" />
+      <label for="alert3">SMS alert</label>
+    </fieldset>
+
+    </fieldset>
+    <input type="submit" value="Submit Form" />
+    <input type="reset" value="Reset Form" />
+
+    </form>
+  </main>
+  <footer>
+    <p><small>©Copyright Owner Harsh Dorlekar</small></p>
+  </footer>
+</body>
+
+</html>

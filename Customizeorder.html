@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>
+    Customize Pizza
+  </title>
+  <link rel="Stylesheet" href="/style5.css">
+  <link rel="icon" href="/images/title-icon.png">
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <img src="/images/pizza-icon.jpg" class="logo">
+      <ul>
+
+        <li><a href="/index.html">HOME</a></li>
+        <li><a href="/register.html" target="_blank">REGISTER NOW</a></li>
+        <li><a href="/index.html">ABOUT US</a></li>
+      </ul>
+      <img src="images/menu.png" class="menu-icon">
+    </nav>
+  </div>
+  <main>
+    <div class="form">
+      <center>
+        <h2>CUSTOMIZE YOUR PIZZA</h2>
+      </center>
+      <form action="/orderconfirmed.html" autocomplete="on" method="get">
+        <input type="hidden" name="form_sent" value="1" />
+        <fieldset>
+          <legend><b>How you want your Pizza</b></legend>
+          <br>
+          <div class="topings">
+            <lable for="EC">Extra Cheese</lable>
+            <input type="checkbox" id="EC" name="EC">
+            <br>
+            <lable for="PP">Pepperoni</lable>
+            <input type="checkbox" id="PP" name="PP" value="PP">
+            <br>
+            <lable for="MU">Mushroom</lable>
+            <input type="checkbox" id="MU" name="MU" value="Mushroom"><br>
+            <lable for="BC">Black Olives</lable>
+            <input type="checkbox" id="BC" name="BC" value="Black Olives"><br>
+            <lable for="ON">Onion</lable>
+            <input type="checkbox" id="ON" name="ON" value="Onion"><br>
+            <lable for="GP">Green Pepper</lable>
+            <input type="checkbox" id="GP" name="GP" value="Green Pepper"><br>
+            <lable for="SA">Sausage</lable>
+            <input type="checkbox" id="SA" name="SA" value="Sausage"><br>
+          </div>
+          <br>
+          <div>
+            <label for="size">Select Size:</label>
+            <select id="size" name="size">
+              <option value="R">Regular</option>
+              <option value="M">Medium</option>
+              <option value="L">Large</option>
+              <option value="XL">Extra Large</option>
+            </select>
+          </div>
+          <br>
+          <div class="base">
+            <label for="base"> Select Base: </label>
+            <select id="base" name="base">
+              <option value="thin" selected>deep dish</option>
+              <option value="NH">New Hand Tossed</option>
+              <option value="CB">Cheese Brust</option>
+              <option value="FPP">Fresh Pan Pizza</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <label for="nopizzas"> Select Number of Pizzas: </label>
+            <select id="noofpizza" name="noofpizza">
+              <option value="One" selected>1</option>
+              <option value="Tow">2</option>
+              <option value="Three">3</option>
+              <option value="Four">4</option>
+              <option value="Five">5</option>
+              <option value="Six">6</option>
+              <option value="Seven">7</option>
+            </select>
+            <br>
+            <br>
+            <div class="button">
+              <button type="button" onclick="alert('Sorry your nearby center does not provide this services')">More
+                pizzas</button>
+            </div>
+          </div>
+          <br>
+        </fieldset>
+    </div>
+    <br>
+    <fieldset>
+      <legend><b>Contact Details</b></legend>
+      <div>
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone" name="telephone" maxlength="14" required />
+      </div>
+      <br>
+      <div>
+        <label for="address">Address:</label>
+        <textarea id="address" name="message" rows="5" cols="30" maxlenght="70" required>
+          </textarea>
+      </div>
+    </fieldset>
+    <div>
+      <fieldset>
+        <legend>Select Delivery Type</legend>
+        <input list="yes_or_no" name="yes_or_no">
+        <datalist id="yes_or_no">
+          <option value="Delivery">
+          <option value="Takeout">
+        </datalist>
+      </fieldset>
+    </div>
+    <input type="submit" id="Submit" name="Submit">
+    <input type="reset" id="Reset" name="Reset">
+    </div>
+
+
+    </form>
+  </main>
+  <footer>
+    <p><small>©Copyright Owner Harsh.D</small></p>
+  </footer>
+</body>
+
+</html>
